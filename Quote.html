@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Gallery</title>
+  <link rel="stylesheet" href="Quote1.css">
+</head>
+
+<body>
+    <% Cookie[] ck=request.getCookie();
+    if(ck!=null){
+    for(int i=0;i<ck.length;i++){
+    if(ck[i].getName().equals("")){
+    uname=ck[i].getValue();
+    }
+    }
+    }%>
+    
+  <header class="headera">
+    <div class="barnd">
+      <h1>Gurukripa Interior</h1>
+    </div>
+    <nav class="navbar">
+            <a href="#HOME">HOME</a>
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#Testimonials">TESTIMONIALS</a>
+           <a href="#BLOG">BLOG</a>
+           <a href="contact.html">CONTACT</a>
+            <a href="loginpage.html">LOGIN</a>
+            <a href="">Log Out</a>
+          </nav>
+        </header>
+  <div class="card-container">
+    <div class="column">
+      <div class="card">
+        <img src="image\liv2.avif" alt="Image 1">
+        <p><h2>This is a Living Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="image/bedrooom1.jpg" alt="Image 2">
+        <p><h2>This is a Pooja Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="image\liv5.avif"alt="Image 3">
+        <p><h2>This is a Living Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="image\pooja1.avif" alt="Image 2">
+        <p><h2>This is a Pooja Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="image\tv4.avif"alt="Image 3">
+        <p><h2>This is a T.V Unit</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\liv4.avif"alt="Image 3">
+        <p><h2>This is a Living Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\bed5.avif"alt="Image 3">
+        <p><h2>This is a Bed Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\tv3.avif"alt="Image 3">
+        <p><h2>This is a T.V Unit</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+    </div>
+
+  
+    <div class="column">
+      <div class="card">
+        <img src="D:\Project\satish project\bath3.avif"alt="Image 3">
+        <p><h2>This is a Bath Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\liv1.avif"alt="Image 3">
+        <p><h2>This is a Living Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\bath5.avif" alt="Image 4">
+        <p><h2>This is a Bath Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\tv1.avif"alt="Image 3">
+        <p><h2>This is a T.V Unit</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\liv3.avif"alt="Image 3">
+        <p><h2>This is a Living Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button>Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\tv5.avif"alt="Image 3">
+        <p><h2>This is a T.V Unit</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\pooja2.avif" alt="Image 5">
+        <p><h2>This is a Pooja Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\liv5.avif" alt="Image 6">
+        <p><h2>This is a Living Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+    </div>
+
+
+  
+    <div class="column">
+      <div class="card">
+        <img src="D:\Project\satish project\ward3.avif"alt="Image 3">
+        <p><h2>This is a wordrobe</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\bed4.avif"alt="Image 3">
+        <p><h2>This is a Bed Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\ward2.avif"alt="Image 3">
+        <p><h2>This is a wordrobe</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project/back.jpg"alt="Image 3">
+        <p><h2>This is a Living Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="project1\bed1a.jpg"alt="Image 3">
+        <p><h2>This is a wordrobe</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="project1\pooja4.avif" alt="Image 7">
+        <p><h2>This is a Pooja Room</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="D:\Project\satish project\tv5.avif" alt="Image 8">
+        <p><h2>This is a T.V Unit</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+      <div class="card">
+        <img src="project1\kitchen1a.jpg" alt="Image 9">
+        <p><h2>This is a wordrobe</h2><br>the size of the wordrobeis 9x12</p>
+        <button onclick="handleClick">Get Quot</button>
+      </div>
+    </div>
+  </div>
+    
+
+
+<script>
+    function handleClick() {
+          window.location.href = "quotpage.html"
+    };
+</script>
+</body>
+</html>

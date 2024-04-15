@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="cssfilexxcnvgfgfcf.css">
+  <link rel="stylesheet" href="owl.carousel.css">
+  <link rel="stylesheet" href="owl.theme.default.min.css">
+  <script src="jquery.js" charset="utf-8"></script>
+  <script src="jquery3.4.1.min.js" charset="utf-8"></script>
+  <script src="owl.carousel.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*----global ----*/
+.container {
+  max-width: 80%;
+  margin: auto;
+}
+
+.container-sav {
+  max-width: 100%;
+max-height: 80%;
+margin-left: 30px;
+margin-right: 30px;
+}
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+}
+
+/*----global ----*/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("image/back.jpg") no-repeat;
+  background-size: cover;
+background-position: center;                                    
+}
+
+header .container_content {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+}
+
+header nav {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+
+header .barnd h1 {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 50px;
+  font-family: sans-serif;
+  color: white;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  padding-left: 50px;
+  text-align: center;
+  list-style: none;
+  line-height: 50px;
+}
+
+header ul li a {
+  color: #D0D3D4;
+  font-size: 15px;
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+header ul li a:hover {
+  color: #3ea8ea;
+}
+
+#icon {
+  color: black;
+  font-size: 30px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  display: none;
+  opacity: 0;
+}
+
+header .icon {
+  color: white;
+  padding-top: 20px;
+  text-decoration: none;
+}
+
+header .icon i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+header .icon label {
+  margin-right: 20px;
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+
+
+header hr {
+  opacity: 0.2;
+  margin-top: 20px;
+  width: 100%;
+}
+
+header .home {
+  margin-top: 15%;
+  text-align: center;
+  color: #D0D3D4;
+}
+
+header .home h3 {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: sans-serif;
+  letter-spacing: 4px;
+  word-spacing: 5px;
+}
+
+header .home h1 {
+  font-size: 105px;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+header .home .item {
+  margin-top: 10%;
+  text-align: left;
+}
+
+header .home .item a {
+  font-size: 20px;
+  color: #12B0BB;
+  opacity: 0.8;
+}
+
+header .home .item .item_box {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 5px;
+  transition: 0.5s;
+  margin-top: 25%;
+}
+
+header .home .item p {
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 20px;
+}
+
+header .home .item .text {
+  margin-left: 20px;
+}
+
+header .home .item img {
+  width: 100px;
+  height: 100px;
+}
+
+header .home .item .item_box:hover {
+  background: #ECF0F1;
+  transform: translateY(-10px);
+  color: black;
+}
+
+header .home .item .item_box:hover a {
+  color: black;
+}
+
+header .home .item .item_box:hover img {
+  background-color: #52cafe;
+}
+
+@media only screen and (max-width: 800px) {
+
+  /*---------------header--------*/
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container {
+    max-width: 95%;
+  }
+
+  header ul {
+    background: #fff;
+    display: block;
+    transition: 0.5s;
+    top: -20px;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    place-items: center;
+    z-index: 100;
+  }
+
+  header ul li {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  header ul li a {
+    font-size: 15px;
+    font-family: sans-serif;
+    color: black;
+  }
+
+  header ul li a:hover {
+    color: #7b7aa1;
+  }
+
+  #icon {
+    opacity: 1;
+    display: block;
+    position: absolute;
+    right: 20px;
+  }
+
+  /*---------------header--------*/
+  header {
+    background-image: url("D:\Project/back.jpg");
+    background-size: cover;
+    height: 100vh !important;
+  }
+
+  header .home h3 {
+    font-size: 18px;
+  }
+
+  header .home h1 {
+    font-size: 50px;
+  }
+
+  header .home .item {
+    margin-top: 20%;
+  }
+
+  header .home .item .item_box {
+    padding: 20px;
+  }
+}
+
+/*---------------Design--------*/
+.Design {
+  margin-top: 22%;
+  text-align: center;
+}
+
+.Design .box {
+  flex-direction: row;
+}
+
+.Design .box i {
+  font-size: 80px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.Design .box h4 {
+  font-size: 25px;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+
+.Design .box p {
+  font-size: 20px;
+  color: grey;
+  line-height: 35px;
+}
+
+
+.left,
+.right {
+  width: 50%;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+.about {
+  margin-top: 5%;
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+}
+
+.about .img::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 650px;
+  border: none;
+  left: 9.5%;
+  margin-top: -45px;
+}
+
+h5 {
+  letter-spacing: 2px;
+  color: rgb(93, 189, 248);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about .accordion {
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.5s;
+  border: none;
+  margin-top: 20px;
+  position: relative;
+  background: #d0d5db;
+  border-radius: 5px;
+}
+
+.about .panel {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+.about .panel.active {
+  display: block;
+}
+
+.about p {
+  font-size: 20px;
+  color: grey;
+  line-height: 35px;
+  padding: 30px;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 90rem;
+  max-height: 80rem;
+  margin: 0 auto;
+}
+
+.link a {
+  background: skyblue;
+    padding: 15px 60px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+    margin-left: 78%;
+    
+}
+::-webkit-scrollbar {
+  background: transparent;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: lightgray;
+  border-radius: 10px;
+
+
+}
+.link a:hover {
+  background: none;
+  border: 2px solid skyblue;
+  color: black;
+}
+
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5px 3px -0.75px hsla(0, 0%, 0%, 0.25);
+  border-radius: 5px;
+  width: 100%;
+  height: 630px;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  height: 100%;
+  width: 200px;
+  scroll-snap-align: start;
+  object-fit: auto ;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1px;
+  position: absolute;
+  bottom: 1.25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5px;
+  height: 0.5px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.Testimonials {
+  text-align: center;
+  margin-top: 5%;
+  text-align: center;
+}
+
+.Testimonials .img {
+  width: 100px;
+  height: 100px;
+}
+
+.Testimonials .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+
+.Testimonials .item {
+  background: white;
+  padding: 40px;
+  margin-top: 10%;
+  transition: 0.5s;
+}
+
+.Testimonials .item:hover {
+  background: #d0d5db;
+  color: white;
+}
+
+.Testimonials .box .text {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.Testimonials .box .text h5 {
+  margin-top: 20px;
+  color: black;
+}
+
+.Testimonials p {
+  font-size: 20px;
+  text-align: left;
+  color: grey;
+  line-height: 35px;
+}
+
+
+.photo {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.photo .box {
+  background: white;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+}
+
+.photo .box img {
+  width: 80px;
+  height: 80px;
+  margin-top: 10%;
+}
+
+.photo .box:hover {
+  transform: translateY(-20px);
+}
+
+
+.blog {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.blog .box {
+  text-align: left;
+}
+
+.blog .img {
+  overflow: hidden;
+  position: relative;
+  object-fit:  cover;
+  height: 430px;
+}
+
+.blog img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.blog img:hover {
+  transform: scale(1.1);
+}
+
+.blog .box label {
+  font-size: 20px;
+  color: grey;
+}
+
+.blog .box p {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.blog a {
+  background: skyblue;
+  padding: 15px 60px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  transition: 0.5s;
+}
+
+.blog a:hover {
+  background: none;
+  border: 2px solid skyblue;
+  color: black;
+}
+
+
+footer {
+  margin-top: 10%;
+  background: rgba(0, 0, 0, 0.8);
+  color: grey;
+}
+
+footer .content {
+  padding-top: 5%;
+}
+
+footer .content .item {
+  padding: 40px;
+  transition: 0.5s;
+}
+
+footer h3 {
+  color: white;
+  margin-bottom: 40px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  padding: 10px;
+  font-size: 20px;
+}
+
+a:-webkit-any-link {
+  color: rgba(255, 255, 255, 0.881);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+footer .box {
+  margin-top: 20px;
+}
+
+footer .img {
+  width: 100px;
+  height: 100px;
+}
+
+footer .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+footer .text {
+  margin-left: 20px;
+}
+
+footer p {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+footer input {
+  width: 83%;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+  background: none;
+  border: 1px solid grey;
+}
+
+footer input:focus {
+  outline: none;
+}
+
+footer .label {
+  background: skyblue;
+  padding: 12px;
+  color: white;
+  font-size: 18px;
+  margin-left: -20px;
+}
+
+footer .icon i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+footer .legal {
+  text-align: center;
+  padding: 70px;
+}
+
+footer .legal i,
+footer .legal label {
+  color: skyblue;
+}
+
+footer .content i:hover,
+footer .content label:hover,
+footer .content p:hover,
+footer .content li:hover {
+  color: white;
+  cursor: pointer;
+  transform: translateX(10px);
+}
+
+footer .content i,
+footer .content label,
+footer .content p,
+footer .content li {
+  transition: 0.5s;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+  .Design {
+    text-align: left;
+    padding: 40px;
+  }
+
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 40px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .about .img::after {
+    width: 540px;
+    height: 600px;
+  }
+
+  h5 {
+    text-align: center;
+  }
+
+  /*---------------about--------*/
+  /*---------------Testimonials--------*/
+  .Testimonials .box .text h5 {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  /*---------------Testimonials--------*/
+}
+
+@media only screen and (max-width: 500px) {
+  .flex1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .grid1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /*----global ----*/
+  header {
+    background-image: url("D:\Project/back.jpg");
+    height: 120vh !important;
+  }
+
+  header .icon i {
+    font-size: 15px;
+    margin-right: 10px;
+  }
+
+  header .icon label {
+    display: none;
+  }
+
+  header .home h3 {
+    font-size: 15px;
+  }
+
+  header .home h1 {
+    font-size: 50px;
+  }
+
+  header .home .item .item_box {
+    padding: 10px;
+  }
+
+  header .home .item p {
+    font-size: 17px;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+
+  header .home .item img {
+    width: 60px;
+    height: 60px;
+    
+  }
+
+  /*---------------Design--------*/
+  .Design {
+    text-align: left;
+  }
+
+  .Design .box i {
+    font-size: 50px;
+    margin-right: 20px;
+  }
+
+  .Design .box i::after {
+    width: 50px;
+    height: 50px;
+    left: 0%;
+    top: 0%;
+  }
+
+  .Design .box h4 {
+    font-size: 20px;
+  }
+
+  .Design .box p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 0px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .about .img::after {
+    width: 350px;
+    height: 350px;
+    left: 5%;
+  }
+
+  footer .legal {
+    font-size: 12px;
+    padding: 0;
+  }
+}
+  </style>
+</head>
+<body>
+  <header id="home">
+    <div class="container_content">
+      <div class="container">
+        <div class="icon flex1">
+          <div class="box">
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+            <a href="https://twitter.com/gurukrip1"><i class="fa fa-twitter"></i></a>
+          </div>
+          <div class="box">
+            <i class="fa fa-envelope"></i>
+            <label>gurukripainteriors@gmail.com</label>
+            <i class=" fa fa-phone"></i>
+            <label>+91 22937 37484</label>
+          </div>
+        </div>
+        <hr>
+        <nav>
+          <div class="barnd">
+            <h1>Gurukripa Interior</h1>
+          </div>
+          <ul id="menu">
+            <li><a href="#HOME">HOME</a></li>
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#Testimonials">TESTIMONIALS</a></li>
+            <li><a href="#BLOG">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="loginpage.html">LOGIN</a></li>
+          </ul>
+          <i id="icon" class="fa fa-bars"></i>
+        </nav>
+        <div class="home">
+          <h3>INTERIOR DESIGN COMPANY</h3>
+          <h1>Experience Interior <br> Design</h1>
+          <div class="item grid">
+            <div class="item_box flex">
+              <img src="image\i1.png" width="80px">
+              <div class="text">
+                <a>Interior Architecture</a>
+                <p>Transforming spaces, one piece at a time. </p>
+              </div>
+            </div>
+            <div class="item_box flex ">
+              <img src="image\i2.png" width="80px">
+              <div class="text">
+                <a>Interior Design</a>
+                <p>The customer is very smart will persued adipisicing elit. </p>
+              </div>
+            </div>
+            <div class="item_box flex">
+              <img src="image/i3.png" width="80px">
+              <div class="text">
+                <a>Furniture</a>
+                <p>Elevate your home with timeless elegance. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="banner"></section>
+  <script type="text/javascript">
+    window.addEventListener("scroll",function(){
+      var header = document.querySelector("header");
+      header.classList.toggel("sticky",window.scrollY >0);
+
+    })
+  </script>
+  <script>
+    let bar = document.getElementById("icon");
+    let menu = document.getElementById("menu");
+
+    bar.addEventListener("click", function() {
+      if (bar.className === "fa fa-bars") {
+        bar.className = "fa fa-times";
+        menu.style.right = 0;
+      } else {
+        bar.className = "fa fa-bars";
+        menu.style.right = "-1000px";
+      }
+    })
+  </script>
+  <section class="Design">
+    <div class="container grid">
+      <div class="box flex">
+        <i class="fa fa-qrcode"></i>
+        <div class="text">
+          <h4>Creative Solutions</h4>
+          <p>To forsake the art of design is to betray the spirit of spaces, let not neglect soften the resolve to craft environments that inspire and uplift. </p>
+        </div>
+      </div>
+      <div class="box flex">
+        <i class="fa fa-wpexplorer"></i>
+        <div class="text">
+          <h4>Design Interior</h4>
+          <p> Amidst the clamor of trends, let the quiet dedication to detail shape spaces that endure, for in the heart of design lies the essence of timeless elegance.</p>
+        </div>
+      </div>
+      <div class="box flex">
+        <i class="fa fa-lightbulb-o"></i>
+        <div class="text">
+          <h4>Intuitive Design</h4>
+          <p> Only when passion guides the vision do spaces truly come alive, those who neglect their design duties forsake the soulful essence of living.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="ABOUT">
+    <div class="container flex1">
+      <div class="left">
+        <div class="img">
+          <img src="image\home.jpg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <h5>ABOUT US</h5>
+        <h2>Why Us</h2>
+        <button class="accordion  "> <label>1. What Shold i do if my interior broken?</label> </button>
+        <div class="panel active">
+          <p>If your interior is broken or damaged, don't panic! Start by assessing the extent of the damage and identifying the cause, whether it's a structural issue, wear and tear, or accidental damage. Depending on the severity, consider consulting with a professional interior designer or contractor to evaluate the situation and provide solutions tailored to your space and budget. Whether it's repairing a cracked wall, replacing damaged furniture, or addressing water damage, prioritize safety and functionality while maintaining the aesthetic appeal of your interior. With careful planning and expert guidance, you can restore and revitalize your space, turning setbacks into opportunities for creative enhancement.</p>
+        </div>
+        <button class="accordion">2. what is your location</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <button class="accordion">3. robus building</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <button class="accordion"> 4. what is your main services?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+<section class="container-sav">
+  <div class="slider-wrapper">
+    <div class="slider">
+      <img id="slide-1" src="image/kitchen1a.jpg"/>
+      <img id="slide-2" src="image/home2.jpg"/>
+      <img id="slide-3" src="image/bed1a.jpg"/>
+      <img id="slide-4" src=image/bed1c.jpg"/>
+      <img id="slide-5" src="image/i2.avif"/>
+      </div>
+      <div class="slider-nav">
+        <a href="slide-1"></a>
+        <a href="slide-2"></a>
+        <a href="slide-3"></a>
+        <a href="slide-4"></a>
+        <a href="slide-5"></a>
+      </div>
+    </div>
+  </div><br><br>
+  <div class="link">
+    <a href="Quote.jsp">Get Free Quote</a>
+  </div>
+</section>
+  <section class="Testimonials" id="Testimonials">
+    <div class="container">
+      <h5>HAPPY CLIENTS </h5>
+      <h2>Testimonials</h2>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item  ">
+          <div class="box flex">
+            <div class="img">
+              <img src="image/t.jpg" alt=""><br>
+            </div>
+            <div class="text">
+              <h3>Cole Marena</h3>
+              <h5>OWNER OF BUILDING CO.</h5><br>
+            </div>
+          </div>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="item  ">
+          <div class="box flex">
+            <div class="img">
+              <img src="image/t.jpg" alt=""><br>
+            </div>
+            <div class="text">
+              <h3>Cole Marena</h3>
+              <h5>OWNER OF BUILDING CO.</h5><br>
+            </div>
+          </div>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="item  ">
+          <div class="box flex">
+            <div class="img">
+              <img src="image/t.jpg" alt=""><br>
+            </div>
+            <div class="text">
+              <h3>Cole Marena</h3>
+              <h5>OWNER OF BUILDING CO.</h5><br>
+            </div>
+          </div>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="item  ">
+          <div class="box flex">
+            <div class="img">
+              <img src="image/t.jpg" alt=""><br>
+            </div>
+            <div class="text">
+              <h3>Cole Marena</h3>
+              <h5>OWNER OF BUILDING CO.</h5><br>
+            </div>
+          </div>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        800: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+  <section class="about photo" id="PHOTO">
+    <div class="container flex1">
+      <div class="left">
+        <div class="img">
+          <img src="image/p1.jpg" alt="">
+        </div>
+      </div>
+      <div class="right grid1">
+        <div class="box">
+          <a href="project1\homedecore.html"><img src="image/i7.png" alt=""></a>
+          <h3>House Decor</h3>
+        </div>
+        <div class="box">
+          <a href="project1\seat.html"><img src="image/i4.png" alt=""></a>
+          <h3>Seat Decor</h3>
+        </div>
+        <div class="box">
+          <a href="project1\seat.html"><img src="image/i5.png" alt=""></a>
+          <h3>Intuitive Idea</h3>
+        </div>
+        <div class="box">
+          <a href="project1\seat.html"><img src="image/i6.png" alt=""></a>
+          <h3>Decoration</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog" id="BLOG">
+    <div class="container  ">
+      <h5>NEWS & UPDATE</h5>
+      <h2>Our Blog Posts</h2> <br><br>
+      <div class="content grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/p3.jpg" alt="">
+          </div>    
+          <div class="text">
+            <label>23, April 2022</label><br>
+            <p>Architecture is ready to take the world to the next level</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/p2.jpg" alt="">
+          </div>
+          <div class="text">
+            <label>15, January 2023</label><br>
+            <p>Architecture is the thoughtful making of space </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image\home3.jpg" alt="">
+          </div>
+          <div class="text">
+            <label>12, September 2022</label><br>
+            <p>Architecture is the silent narrator of our lives, shaping our experiences and memories</p>
+          </div>
+        </div>
+      </div>
+      <a href="#">View All Posts</a>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="content grid">
+        <div class="item ">
+          <h3>Navigation</h3>
+          <div class="item_box flex1 ">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li>Servies</li>
+              <li>Team</li>
+            </ul>
+            <ul>
+              <li><a href="#ABOUT">About Us</a></li>
+              <li>Privacy Policy</li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <h3>Recent News</h3>
+          <div class="box flex">
+            <div class="img">
+              <img src="image\kitchen1g.jpg" alt="">
+            </div>
+            <div class="text">
+              <label>DEC 10, 2023</label>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="image\bed12.jpg" alt="">
+            </div>
+            <div class="text">
+              <label>SEP 16, 2023</label>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="image\living4.jpg" alt="">
+            </div>
+            <div class="text">
+              <label>AUG 16, 2021</label>
+              <p>Lorem ipsum dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <h3>Subscribe Newsletter</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
+          <input type="text" placeholder="Enter Email">
+          <label class="label">Send</label>
+          <div class="icon">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+            <a href="https://twitter.com/gurukrip1"><i class="fa fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <p class="legal">Copyright (c) 2021 Copyright Holder All Rights Reserved by Gurukripa Interior </p>
+    </div>
+  </footer>
+</body>
+</html>

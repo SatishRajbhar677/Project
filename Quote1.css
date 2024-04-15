@@ -1,0 +1,187 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.box {
+  margin-right: 10px;
+  background-color: #555;
+  min-height: 20px;
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 20px 100px;
+background: rgba(86, 84, 86, 0.922);
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 100;
+}
+
+.barnd { 
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+  transition: 0.5s;
+
+}
+
+.navbar a:before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+}
+
+.navbar a:hover::before{
+  width: 100%;
+
+}
+.navbar a:hover{
+  color: #3ea8ea;
+
+}
+
+
+header .barnd h1 {
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 50px;
+  font-family: sans-serif;
+  color: white;
+  text-align: 20px;
+}
+
+header .container_content {
+
+  height: 100vh;
+  width: auto;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+
+.barnd h1 {
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+ul#menu {
+  list-style-type: none;
+}
+
+ul#menu li {
+  display: inline;
+  margin-right: 10px;
+}
+header hr {
+  opacity: 0.2;
+  margin-top: 20px;
+}
+
+
+ul#menu li a {
+  color: #2b2323;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+ul#menu li a:hover {
+  color: #3ea8ea;
+
+
+}
+
+ .card-container {
+  margin-top: 100px;
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+  
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0 25px;
+  
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    border: solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 420px;
+    height: 290px;
+    border-radius: 5px;
+  
+  }
+  
+  .grade {
+    margin-top: 10px;
+  }
+  
+  .card button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #d08bf3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card button:hover {
+    background-color: #fefefe;
+  }
+.card button:hover {
+  background-color: #fefefe;
+}
+

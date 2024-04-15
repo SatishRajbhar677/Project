@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form </title>
+        <link rel="stylesheet" href="loginpage.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="index.html" onSubmit="return myFunction()">
+               
+                <h1>Set Password</h1>
+                <div class="input-box">
+                    <input type="password"  id="pass1" name="txtPass" placeholder="Set New Password" >
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password"  id="pass2" name="txtPass1"  placeholder="Enter Same Password" >
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <div class="passwordError" id="Error"></div>
+                <input type="submit"  value="Submit">
+            </form>
+
+        </div>
+
+        <script>
+
+            function myFunction() {
+                var password = document.getElementById("pass1").value;
+                var confirmPassword = document.getElementById("pass2").value;
+                var passwordError = document.getElementById("passwordError");
+
+                if (password != confirmPassword) {
+                    passwordError.textContent = "Password does not match";
+                    console.log("password");
+                    return false;
+                } else {
+                    passwordError.textContent = "";
+                }
+            }
+
+
+        </script>
+    </body>
+</html>
+

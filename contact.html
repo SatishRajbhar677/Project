@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact Form</title>
+</head>
+<body>
+    <header class="header">
+        <div class="barnd">
+          <h1>Gurukripa Interior</h1>
+        </div>
+        <nav class="navbar">
+                <a href="#HOME">HOME</a>
+                <a href="#ABOUT">ABOUT</a>
+                <a href="#Testimonials">TESTIMONIALS</a>
+               <a href="#BLOG">BLOG</a>
+               <a href="D:\Project\satish project\contact.html">CONTACT</a>
+                <a href="D:\Project\satish project\loginpage.html">LOGIN</a>
+                <a href="">Log Out</a>
+              </nav>
+    </header>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-tittle">
+                <h2>Get in Touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="76d1d471-2c7e-4210-b590-f61922afad1e">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit </button>
+
+        </form>
+    </div>
+</body>
+</html>
